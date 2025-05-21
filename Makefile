@@ -54,7 +54,3 @@ doc:
 
 run: $(CLASS_FILES) build/$(PKG)/$(STYLE)
 	@java -p ${JAVAFX_HOME}/lib/ --add-modules javafx.controls -cp build $(PKG).BaccaratApp $(ARGS)
-
-submit: clean
-	@cd ..; jar cf $(PRJ).jar -C $(PRJ) .
-	@cd ..; /export/home/public/gnye/csc243/turnin/turnin-Project $(PRJ).jar
